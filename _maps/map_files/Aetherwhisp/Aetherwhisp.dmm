@@ -14117,6 +14117,18 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/supermatter_core)
+"hTS" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/computer/shuttle/advanced{
+	dir = 8;
+	shuttleId = "fob"
+	},
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/shuttle/ftl/cargo/mining)
 "hXX" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/structure/window/reinforced{
@@ -16821,16 +16833,6 @@
 /obj/item/weapon/shovel/spade,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
-"lZK" = (
-/obj/machinery/computer/shuttle/fob{
-	desc = "Used to call and send the mining shuttle.";
-	dir = 8;
-	name = "Mining Shuttle Console"
-	},
-/turf/open/floor/plasteel/darkblue/side{
-	dir = 2
-	},
-/area/shuttle/ftl/bridge)
 "mcM" = (
 /turf/open/floor/plasteel/white/side{
 	dir = 4
@@ -18254,19 +18256,6 @@
 	dir = 2
 	},
 /area/shuttle/ftl/engine/tool_storage)
-"nVv" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/machinery/computer/shuttle/fob{
-	desc = "Used to call and send the mining shuttle.";
-	dir = 8;
-	name = "Mining Shuttle Console"
-	},
-/turf/open/floor/plasteel/white/side{
-	dir = 4
-	},
-/area/shuttle/ftl/cargo/mining)
 "nWj" = (
 /obj/structure/table,
 /obj/item/weapon/book/manual/wiki/security_ship_law{
@@ -21351,6 +21340,15 @@
 "rRa" = (
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/cargo)
+"rSC" = (
+/obj/machinery/computer/shuttle/advanced{
+	dir = 8;
+	shuttleId = "fob"
+	},
+/turf/open/floor/plasteel/darkblue/side{
+	dir = 2
+	},
+/area/shuttle/ftl/bridge)
 "rUt" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -34951,16 +34949,6 @@
 	dir = 8
 	},
 /area/shuttle/ftl/cargo/mining)
-"LJi" = (
-/obj/structure/fans/tiny,
-/obj/docking_port/mobile/fob,
-/obj/docking_port/stationary/fob/fob_dock,
-/obj/machinery/door/airlock/glass_external{
-	name = "Mining Shuttle";
-	req_one_access_txt = "48"
-	},
-/turf/open/floor/plating,
-/area/shuttle/ftl/cargo/mining)
 "LJt" = (
 /obj/machinery/light_switch{
 	pixel_x = -24;
@@ -36819,6 +36807,21 @@
 	},
 /turf/open/floor/plasteel/whiteblue/side,
 /area/shuttle/ftl/medical/sleeper)
+"OHf" = (
+/obj/structure/fans/tiny,
+/obj/docking_port/mobile/fob{
+	allowed_docks = 1;
+	dir = 8
+	},
+/obj/docking_port/stationary/fob/fob_dock{
+	dir = 8
+	},
+/obj/machinery/door/airlock/glass_external{
+	name = "Mining Shuttle";
+	req_one_access_txt = "48"
+	},
+/turf/open/floor/plating,
+/area/shuttle/ftl/cargo/mining)
 "OHS" = (
 /obj/structure/table,
 /obj/item/weapon/phone{
@@ -75325,7 +75328,7 @@ ajA
 WqG
 alT
 amT
-LJi
+OHf
 AYR
 FvF
 Olq
@@ -75858,7 +75861,7 @@ avv
 dHd
 DVC
 xxd
-lZK
+rSC
 XBE
 avw
 pFn
@@ -76599,7 +76602,7 @@ aab
 zYP
 AlC
 NJY
-nVv
+hTS
 LBZ
 Ovr
 zYP
