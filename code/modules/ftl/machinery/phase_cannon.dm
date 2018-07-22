@@ -84,7 +84,7 @@
 		s.set_up(5, 1, src)
 		s.start()
 
-/obj/machinery/power/shipweapon/attackby(obj/item/W, mob/user, params) //someone add this thanks
+/obj/machinery/power/shipweapon/attackby(obj/item/W, mob/user, params) //someone add this thanks -no
 	switch(state)
 		if(CONSTRUCTION_STATE1)
 		if(CONSTRUCTION_STATE2)
