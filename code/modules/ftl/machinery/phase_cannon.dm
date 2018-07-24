@@ -72,9 +72,9 @@
 	if(!can_fire())
 		return FALSE
 	current_charge = 0
-	if(chip.fire_delay)
-		for(var/i in 1 to chip.shots_fired) //Fire for the amount of time
-			addtimer(CALLBACK(src, .proc/spawn_projectile, target_component, shooter), chip.fire_delay*i)
+	if(chip.attack_data.fire_delay)
+		for(var/i in 1 to chip.attack_data.shots_fired) //Fire for the amount of time
+			addtimer(CALLBACK(src, .proc/spawn_projectile, target_component, shooter), chip.attack_data.fire_delay*i)
 	else
 		spawn_projectile(target_component, shooter)
 
@@ -91,7 +91,7 @@
 	A.shooter = shooter
 	A.yo = 0
 	A.xo = 20
-	A.attack_data = new chip.attack_data //Actual info of weapon
+	A.attack_data = chip.attack_data 
 	A.starting = loc
 	A.fire()
 	A.target = target_component

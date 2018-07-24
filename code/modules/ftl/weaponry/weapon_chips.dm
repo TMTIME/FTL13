@@ -9,9 +9,7 @@
 
   var/projectile_type = /obj/item/projectile/ship_projectile/phase_blast
   var/fire_sound = 'sound/effects/phasefire.ogg'
-  var/datum/ship_attack/attack_data = /datum/ship_attack/laser
-  var/shots_fired = 3 
-  var/fire_delay = 5
+  var/datum/ship_attack/attack_data = new /datum/ship_attack/laser
 
   var/charge_to_fire = 2000
 
@@ -24,8 +22,6 @@
   projectile_type = /obj/item/projectile/ship_projectile/phase_blast/ion
   fire_sound = 'sound/weapons/emitter2.ogg'
 
-  attack_data = /datum/ship_attack/ion
-  shots_fired = 1
-  fire_delay = 0
+  attack_data = new /datum/ship_attack/ion
 
   charge_to_fire = 10000
