@@ -20,7 +20,7 @@
 	density = TRUE
 	var/state = CONSTRUCTION_COMPLETED
 
-	var/charge_rate = 400 //10 second fire rate with phase cannons
+	var/charge_rate = 400 //5 second fire rate with phase cannons
 	var/current_charge = 0
 
 	use_power = ACTIVE_POWER_USE
