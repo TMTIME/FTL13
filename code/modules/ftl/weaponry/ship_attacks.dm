@@ -8,6 +8,7 @@
 	var/fire_attack = 0 //TODO: Code fire damage for enemy ships
 	var/emp_attack = 0
 
+	var/fire_delay = 0
 	var/shots_fired = 1 //THATS THE WROONG NUMBER OOOOOO
 
 	var/projectile_effect = "emitter"
@@ -26,6 +27,7 @@
 	cname = "phase cannon"
 	projectile_effect = "heavylaser"
 
+	fire_delay = 7
 	shots_fired = 3
 	hull_damage = 1
 
